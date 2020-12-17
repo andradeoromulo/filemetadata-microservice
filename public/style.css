@@ -1,42 +1,62 @@
 /****** Main Styling ******/
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
-  text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #17252A;
+	background-color: #3AAFA9;
+	text-align: center;
+	line-height: 1.4em;
 }
 
 .container {
-  padding: 0;
-  margin-top: 40px;
+	padding: 0;
+	margin: 0 auto;
+	width: 700px;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.footer {
-  margin-top: 60px;
+h2 {
+	color: #FEFFFF;
+}
+
+code {
+	display: block;
+	width: 100%;
+
+  font-family: monospace;
+  padding: 8px;
+  color: #DEF2F1;
+  background-color: #2B7A78;
+  border-radius: 4px;
 }
 
 a {
-  color: #2574A9;
+	color: #DEF2F1;
+	text-decoration: none;
 }
 
-input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
+a:hover {
+	text-decoration: underline;
 }
 
-input#button {
-  width: 230px;
+footer {
+	margin-top: 20px;
+	font-size: 16px;
 }
 
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
+form {
   padding: 20px;
-  width: 60%;
-  min-width: 400px;
+  width: 100%;
+  padding: 8px;
+  color: #DEF2F1;
+  background-color: #2B7A78;
+  border-radius: 4px;
 }
+
+

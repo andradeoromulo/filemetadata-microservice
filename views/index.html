@@ -2,7 +2,7 @@
 
 <html>
    <head>
-      <title>File Metadata</title>
+      <title>API Project: File Metadata Microservice</title>
       <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="/public/style.css" rel="stylesheet" type="text/css">
@@ -10,25 +10,39 @@
 
    <body>
       <div class="container">
-        <h2>API Project: File Metadata Microservice</h2>
+        <header>
 
-        <h3>Usage:</h3>
-        <p>
-          Please Upload a File ...
-        </p>
-        <div class="view">
-          <h4 id="output"></h4>
+          <h2>API Project: File Metadata Microservice</h2>
+  
+          <p>
+            This is my project of the <a href="https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice" target="_blank"> 
+            File Metadata Microservice challenge </a> for the freeCodeCamp API and Microservice certification. 
+            It was built based on the boilerplate available <a href="https://github.com/freeCodeCamp/boilerplate-project-filemetadata/" target="_blank">here</a>.
+          </p>
+  
+        </header>
+
+        <section>
+
+          <h3>Usage</h3>
+          <p>If you want to extract a file's metadata, just upload it in the form below:</p>
+
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
             <input id="inputfield" type="file" name="upfile">
             <input id="button" type="submit" value="Upload">
           </form>
-        </div>
-      </div>
-      <div class="footer">
-        <p>
-          by 
-          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
-        </p>
-      </div>
+
+          <p>You'll receive an object like this one as output:</p>
+          <code>{"original_url":"https://freecodecamp.org","short_url":"1904412960"}</code>
+
+        </section>
+
+        <footer>
+
+          <p>
+            By <a href="https://www.github.com/andradeoromulo" target="_blank">Rômulo Andrade</a> for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> certification.
+          </p>
+  
+        <footer>
    </body>
 </html>
